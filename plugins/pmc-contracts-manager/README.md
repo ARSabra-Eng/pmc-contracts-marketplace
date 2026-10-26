@@ -1,6 +1,6 @@
 # PMC Contracts Manager — ZCode Plugin
 
-A [ZCode](https://zcode.z.ai) plugin that turns the agent into a **professional Contracts Manager for PMC (Project Management Consultancy) work**, built on the **FIDIC 2017** suite (Red / Yellow / Silver Books). It covers the **full contract lifecycle** and always works from the **Engineer / PMC neutral-administrator perspective**.
+A [ZCode](https://zcode.z.ai) plugin for **professional Contracts Manager support in PMC (Project Management Consultancy) work**, covering the full contract lifecycle from an Engineer/PMC administration perspective. Its detailed contractual rules use the **FIDIC Red Book 2017 General Conditions baseline**; always confirm the book, edition, Particular Conditions, Special Provisions, and Contract Data before applying them.
 
 > ⚠️ **Important:** This plugin provides contract-administration drafting and process support. It is **not legal advice**. Always verify deadlines and entitlements against your project's own Particular Conditions, Contract Data and applicable law.
 
@@ -10,16 +10,16 @@ A [ZCode](https://zcode.z.ai) plugin that turns the agent into a **professional 
 
 | # | Skill | Covers |
 |---|-------|--------|
-| 1 | `contract-review` | Pre-award tender/contract review, Particular Conditions deviation scan, contract risk register, qualification comments, red-flag list |
-| 2 | `contract-mobilization` | Award → commencement: Contract Agreement (1.6), Performance Security (4.2), insurances (18), advance payment (14.2), Commencement Date (8.1), baseline programme review (8.3), correspondence protocol (1.3) |
-| 3 | `contract-administration` | Day-to-day admin: Engineer instructions (3.3), notices register, 10-register suite, Contemporary Records (20.1), meeting minutes, monthly PMC report |
-| 4 | `claim-notice-management` | Clause 20 regime: 28-day Notice of Claim, time-bar math (worked examples), claims register, 42-day detailed claims & Engineer responses, 3.7 Agreement or Determination |
-| 5 | `eot-delay-analysis` | EOT grounds (8.4), SCL Protocol delay methods (TIA, windows, as-planned vs as-built, collapsed as-built), criticality, concurrency & float, prolongation cost, assessment letters |
-| 6 | `variation-management` | Variations (13.1–13.3), valuation (12.3), provisional sums (13.5), daywork (13.6), changes in legislation/cost (13.7/13.8), VO letters & register |
-| 7 | `payment-final-account` | Payment cycle (14.3/14.6/14.7/14.8), advance payment & retention, Taking-Over (10.1), DNP & Performance Certificate (11.9), Final Statement/discharge/FCC (14.11–14.14), final account |
-| 8 | `dispute-resolution` | Clause 21 escalation ladder (3.7 → NOD → DAAB → amicable → arbitration), deadlines, referral bundles, dispute avoidance |
+| 1 | `contract-review` | Pre-award review, Particular Conditions deviation scan, risk register, qualification comments, escalation triggers |
+| 2 | `contract-mobilization` | Contract Agreement (1.6), Performance Security (4.2), Insurances (19), advance payment (14.2), Commencement Date (8.1), initial programme (8.3), correspondence (1.3) |
+| 3 | `contract-administration` | Engineer instructions (3.5), Notices and registers, Contemporary Records (20.2.3), meeting minutes, monthly PMC reporting |
+| 4 | `claim-notice-management` | Clause 20 regime: 28-day Notice, 84-day fully detailed Claim, late-Notice response, claims register, 3.7 Agreement or Determination |
+| 5 | `eot-delay-analysis` | EOT under 8.5, delay-analysis methods, criticality, concurrency under Special Provisions, separate time/payment entitlement, assessment letters |
+| 6 | `variation-management` | Variations (13.1–13.7), valuation (12.3), Provisional Sums (13.4), Daywork (13.5), Changes in Laws/Cost (13.6/13.7), instruction notices and register |
+| 7 | `payment-final-account` | Statements, IPCs and payment (14.3/14.6/14.7/14.8), advance and retention, Taking-Over (10.1), Performance Certificate (11.9), Final Statement/discharge/FPC (14.11–14.14) |
+| 8 | `dispute-resolution` | Clause 21 escalation (3.7 → NOD → DAAB → amicable settlement → arbitration), deadlines, referral bundles, dispute avoidance |
 
-Every skill includes: when to use, inputs to collect, step-by-step workflow, FIDIC 2017 clause reference tables, deadline math, letter/register/report templates, and a QA checklist.
+Each skill provides trigger conditions, structured workflows, verified Red Book 2017 references, practical controls or templates, and a QA checklist.
 
 ---
 
@@ -55,10 +55,10 @@ Skills trigger **automatically** when your request matches them. You can also in
 
 ## Customizing
 
-- Skills are plain Markdown at `plugins/pmc-contracts-manager/skills/<name>/SKILL.md` — edit freely.
+- Skills are plain Markdown at `plugins/pmc-contracts-manager/skills/<skill-name>/SKILL.md` — edit freely.
 - Common edits: hardcode your standard Contract Data values (retention %, DNP, delay-damages cap), adjust letter skeletons to house style, add project-specific QA items.
 - Want more? Add a `commands/` folder (slash commands) or `agents/` (a dedicated Contracts Manager subagent) per the ZCode plugin docs — the manifest in `.zcode-plugin/plugin.json` supports both.
 
 ## Version
 
-1.0.0 — FIDIC 2017 baseline, PMC/Engineer perspective, English.
+1.0.1 — Corrected FIDIC Red Book 2017 guidance across all eight skills, with expanded regression coverage.

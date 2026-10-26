@@ -4,7 +4,7 @@ description: Use when a FIDIC 2017 disagreement requires dispute avoidance, an E
 when_to_use: DAAB referral, dispute board administration, Notice of Dissatisfaction, amicable settlement, arbitration preparation, records bundle, dispute avoidance, no DAAB in place.
 metadata:
   author: PMC Contracts Manager Plugin
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Dispute Resolution & Dispute Avoidance (Clause 21)

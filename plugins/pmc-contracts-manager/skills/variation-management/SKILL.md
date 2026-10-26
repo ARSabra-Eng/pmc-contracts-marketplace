@@ -1,82 +1,106 @@
 ---
 name: variation-management
-description: Use when managing variations and changes on FIDIC 2017 contracts — issuing or processing Variation Instructions under Clause 13 (13.1 right to vary, 13.3 procedure), valuing variations under 12.3 Valuation, handling provisional sums (13.5) and daywork (13.6), pricing changes in legislation (13.8) and cost adjustments (13.7), maintaining the variations register, and assessing variation-driven EOT. Acts as PMC/Engineer neutral administrator of the change process.
-when_to_use: Variation instruction, change order valuation, 12.3 pricing, provisional sums, daywork, changes in legislation, variations register, VO cost and time impact assessment.
+description: Use when managing FIDIC Red Book 2017 Variations and adjustments, including instructions, requests for proposal, measurement and valuation, provisional sums, daywork, legal or cost changes, and variation-driven EOT.
+when_to_use: Variation instruction, request for proposal, change valuation, provisional sums, daywork, changes in laws or cost, Variations register, cost and time impact assessment.
 metadata:
   author: PMC Contracts Manager Plugin
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Variation Management & Valuation (Clause 13 / 12.3)
 
 ## Perspective
 
-You are the **PMC/Engineer** running the change process: deciding what is a Variation, instructing it properly with method and timing (13.3.1), and seeing that the Contract Price and Time for Completion are adjusted fairly (13.3.2, 12.3, via 3.7). Uncontrolled change is the fastest route to cost overrun and claims — your discipline is the register, the valuation basis, and the paper trail. Administrative support, not legal advice.
+Act as the **PMC/Engineer** controlling change, valuation, time effects, and the audit trail. Keep an instructed Variation distinct from a pre-instruction proposal request and from a Clause 20 Claim. This is administrative support, not legal advice.
 
-**Standing rule:** Verify the applicable book and Particular Conditions first — valuation mechanics sit in Sub-Clause 12.3 (Red/Yellow) and are frequently amended; measurement rules may reference the BOQ preamble or a standard method of measurement.
+**Standing rule:** The detailed rules below are the **FIDIC Red Book 2017 General Conditions baseline**. Confirm the book, edition, Particular Conditions, Contract Data, Bills of Quantities, schedules, and method of measurement before acting.
 
 ## When To Use
 
-- Deciding whether an instruction is a Variation within 13.1
-- Issuing Variation Instructions (with method/timing) and recording Contractor objections
-- Valuing variations: rates from the Contract, derived rates, new rates, daywork
-- Managing provisional sums (13.5) and daywork schedules (13.6)
-- Assessing time impact of variations feeding 8.4 EOT
-- Maintaining the variations register and reporting change status
+- Deciding whether a proposed or instructed change is a Variation under 13.1.
+- Processing a Variation by Instruction or by Request for Proposal under 13.3.
+- Valuing measured work or new rates under 12.3.
+- Administering Provisional Sums, Daywork, Changes in Laws, or Changes in Cost.
+- Assessing variation-driven EOT under 8.5(a).
 
-## What Is A Variation (13.1)
+## Right To Vary (13.1)
 
-A Variation is an instruction by the Engineer (or per the change regime) to change the design/specification/quantity/quality, including: (a) changes to works quantity/quality, (b) changes to dimensions/levels/positions, (c) omission of work, (d) additional work, plant, materials or services, (e) changes to sequence/timing of implementation. **Limits:** no Variation diminishes the Works or any obligation/scope without the Contractor's consent; no instruction to vary may amend the Contract itself. Omissions that would later be executed by others (outflanking) must be handled transparently.
+Variations may be initiated by the Engineer before issue of the Taking-Over Certificate for the Works. They may include quantity, quality, levels, positions, dimensions, omissions, additional work, or sequence/timing changes within Sub-Clause 13.1.
 
-## Procedure (13.3)
+A change in quantity does not necessarily constitute a Variation. Except as stated in 11.4, work to be carried out by the Employer or others may be omitted only if the Parties agree. Where 12.4 applies, include supported unrecovered omission costs in the Contractor's proposal.
 
-1. **13.3.1 — Instruction**: the Engineer issues a Variation Instruction stating the required change and, where relevant, **method and timing**. The Contractor raises difficulties/objections in writing promptly; the Engineer may confirm, revoke or vary the instruction.
-2. **13.3.2 — Price & time**: the Contractor submits the proposed adjusted Contract Price and (if applicable) programme adjustment; the Engineer proceeds under **3.7 (Agreement or Determination)** to fix the adjustment. Pending agreement, the Contractor continues; valuation proceeds per 12.3.
-3. Record every VO's cost and time status in the register; an unsettled valuation never stops the work.
+The Contractor must execute an instructed Variation unless it promptly gives a Notice with detailed supporting particulars under 13.1(a)–(c). The Engineer then responds by cancelling, confirming, or varying the instruction.
 
-## Valuation Rules (12.3 — Baseline)
+## Variation Procedure (13.3)
 
-| Situation | Basis |
-|-----------|-------|
-| Work of similar character under similar conditions | Rates/prices in the Contract for the item (with quantities proportionate — watch for atypical quantities triggering the 12.3 adjustment thresholds) |
-| Work measured as an addition/replacement where quantities diverge materially | New measurement at reasonable rates; 12.3's most-economical/current rates logic as amended |
-| Work not in the Contract / items without rates | Reasonable rates/prices built up from: labour/plant rates in the Contract, market costs, Contractor's Commercial/Technical Data |
-| Daywork items (13.6) | Priced daywork schedules; daily records signed; vouchers; daywork used only when rates unavailable in practice |
-| Provisional sums (13.5) | Spent against instruction; unused sums deducted; contingency sums for Engineer use |
+### 13.3.1 — Variation by Instruction
 
-**Valuation sheet skeleton:** VO ref → description → measurement basis → rate build-up (labour/plant/material/OH&P per Contract) → subtotal → cumulative VO total vs preliminary estimate → EOT days sought → status.
+1. The Engineer gives a Notice under **3.5**, describing the required change and stating any requirements for recording Costs. “Method and timing” is not mandatory instruction wording.
+2. The Contractor proceeds with the Variation and submits detailed particulars within **28 days** after receiving the instruction, or another proposed period agreed by the Engineer.
+3. Particulars cover the varied work and resources/methods, execution programme and necessary programme/Time for Completion modifications, and the proposed Contract Price adjustment under Clause 12 with support.
+4. The Engineer proceeds under 3.7 to agree or determine EOT and/or the Contract Price adjustment. The Contractor is entitled without any requirement to comply with 20.2 for this instructed Variation.
 
-## Instruction Letter Skeleton (13.3.1)
+### 13.3.2 — Variation by Request for Proposal
 
-> Ref / date / to Contractor.
-> **VARIATION INSTRUCTION [VO-xxx] — Sub-Clause 13.3.1**
-> 1. Description of change: [works content, location, drawings/spec refs]
-> 2. Method and timing requirements: [sequence, access, shutdowns, interfaces]
-> 3. Basis of valuation: anticipated under [Contract item / 12.3 derived rates / daywork / provisional sum release]
-> 4. Contractor to submit price and programme impact within [x] days (13.3.2); works to proceed pending agreement.
-> 5. This instruction does not amend the Contract (13.1).
+1. Before instructing a Variation, the Engineer may give a Notice describing the proposed change and requesting a proposal.
+2. The Contractor responds as soon as practicable with a proposal containing the 13.3.1 particulars or reasons it cannot comply under 13.1.
+3. The Engineer responds with consent or otherwise. The Contractor does not delay work while awaiting the response.
+4. If consent is given, the Engineer then instructs the Variation and the final paragraph of 13.3.1 applies. If consent is not given and proposal Cost was incurred, any entitlement is subject to 20.2.
+
+Record the route, dates, valuation, and EOT status in the Variations register.
+
+## Valuation Of The Works (12.3)
+
+Start with the measured quantity and the Contract rate or price, including a rate for similar work where appropriate. An item listed without a rate or price is deemed included in other rates and prices.
+
+A new rate or price may be appropriate for a new/non-similar item under 12.3(a), or for instructed work where 12.3(c) imports the applicable test. The quantity-based test under 12.3(b) requires **all** applicable limbs:
+
+1. Measured quantity changes by more than 10% from the Bill of Quantities or other Schedule.
+2. That quantity change multiplied by the specified rate or price exceeds **0.01% of the Accepted Contract Amount**.
+3. The quantity change directly changes the **Cost per unit quantity** by more than 1%.
+4. The item is not a “fixed rate item,” “fixed charge,” or similar non-adjustable item.
+
+Derive each new rate from relevant Contract rates with reasonable adjustments. If none are relevant, use reasonable Cost plus the Contract Data profit percentage, defaulting to 5% if unstated. If the rate cannot be agreed, process the Contractor's Notice and 3.7 procedure as 12.3 provides, and assess a provisional rate for IPCs until agreement or determination.
+
+## Related Adjustment Provisions
+
+| Provision | Subject | Control |
+|-----------|---------|---------|
+| 13.4 [Provisional Sums] | Provisional Sum expenditure | Administer only as the Contract provides and record instructions/support |
+| 13.5 [Daywork] | Daywork valuation | Verify daily records, resources, and priced schedules |
+| 13.6 [Adjustments for Changes in Laws] | Legal-change adjustment | Identify the legislative change, effective date, and time/cost effect |
+| 13.7 [Adjustments for Changes in Cost] | Cost adjustment | Apply Contract Data indices, formulae, and currencies exactly |
+| 14.15 [Currencies of Payment] | Payment currencies | Keep valuation and payment-currency records aligned |
+
+## Instruction Notice Skeleton (13.3.1)
+
+> **Variation Instruction [reference] — Sub-Clauses 3.5 and 13.3.1**
+> 1. Required change: [description, drawings, specification, location].
+> 2. Cost-recording requirements: [records required].
+> 3. Contractor's detailed particulars due within 28 days, unless another period is agreed.
+> 4. Required content: work/resources/methods; programme and Time for Completion proposals; Clause 12 valuation with support.
+> 5. EOT and Contract Price adjustment will proceed under 3.7 after submission of particulars.
 
 ## Variations Register Template
 
-| VO | Date | Description | Clause basis | Valuation basis | Status (instructed/priced/agreed/determined) | Value | EOT days | Link (claim/RFI) |
-|----|------|-------------|--------------|-----------------|-----------------------------------------------|-------|----------|------------------|
-| VO-014 | 12-Jun | Additional pile caps Z3–Z6 | 13.1(d) | 12.3 derived | Priced — 3.7 consultation | 118,400 | 6 | CL-03 |
+| VO | Route | Notice/date | Description | Particulars due/received | Valuation basis | Value/status | EOT/status | Linked records |
+|----|-------|-------------|-------------|--------------------------|-----------------|--------------|------------|----------------|
+| VO-014 | 13.3.1 | [ref/date] | [change] | [dates] | 12.3 derived rate | [amount/status] | [days/status] | [RFI/Claim] |
 
-## Engineer Controls & Pitfalls
+## Engineer Controls
 
-- **Authority limits**: check the Employer/Engineer delegation matrix before instructing; some Particular Conditions require Employer consent above thresholds.
-- **Preliminary estimate first**: instruct only with a cost/time estimate recorded — surprises belong in no project.
-- **Oral/site instructions**: confirm in writing same day (3.3 confirm-oral mechanism) and classify as VO/RI/record only.
-- **Disguised claims**: a "variation" with no instruction and no 12.3 basis is a claim — route it to Clause 20 (see skill `claim-notice-management`); conversely, genuine instructed change must not be pushed into the claims regime to delay pricing.
-- **Variation-driven EOT**: assess through 13.3.2(b)/8.4(a) with the same criticality discipline as any delay (see skill `eot-delay-analysis`); block "global" EOT claims that do not link days to instructed changes.
-- **Omission for self-execution**: flag omissions intended to be executed by the Employer/others — valuation and risk consequences differ.
-- **Currency (13.4)**: state the currencies of the VO adjustment to keep the price accounts clean.
+- Check delegated authority and any required Employer consent before issuing a Notice.
+- Keep 3.5 instruction objections distinct from 13.1 notices against instructed Variations.
+- Do not route an instructed Variation into 20.2; apply 13.3.1 and 3.7 instead.
+- Assess variation-driven EOT under 8.5(a) with critical-path evidence.
+- Treat omissions for the Employer/others as requiring agreement, and assess any 12.4 particulars.
+- Do not use a single quantity threshold as sufficient for a new rate under 12.3(b).
 
 ## QA Checklist
 
-- [ ] Every change classified correctly: variation (13.1) vs instruction (3.3) vs claim (20.1)
-- [ ] VO Instructions state description, method and timing; objections tracked
-- [ ] Valuation basis recorded per 12.3 with rate build-ups; daywork records signed
-- [ ] Register current: value status and EOT status per VO; cumulative change reported monthly
-- [ ] Time impacts assessed on critical path evidence, not flat percentages
-- [ ] Determinations where needed run through 3.7 with the 14-day NOD warning
+- [ ] The correct 13.3.1 or 13.3.2 route and all Notice dates are recorded.
+- [ ] Instructed Variation particulars address work, programme/time, and valuation within 28 days.
+- [ ] The 12.3 rate basis and every applicable threshold limb are documented.
+- [ ] Adjustments cite 13.4, 13.5, 13.6, 13.7, and 14.15 correctly where relevant.
+- [ ] EOT follows 8.5(a) and is not asserted as a flat percentage.
+- [ ] Agreement or determination follows 3.7 and states the **28-day NOD** period under 3.7.5.

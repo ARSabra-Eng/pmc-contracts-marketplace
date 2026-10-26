@@ -1,105 +1,104 @@
 ---
 name: contract-administration
-description: Use for ongoing day-to-day FIDIC 2017 contract administration on a live project — issuing and logging Engineer instructions (3.3), managing notices and correspondence (1.3), maintaining contract registers (instructions, RFI, drawings, insurance/bonds, subcontractors), running progress meetings, monitoring programme updates (8.3), preserving Contemporary Records (20.1), and preparing the monthly PMC/Engineer report. Acts as the PMC consultant's contract administration engine throughout execution.
-when_to_use: Daily/weekly contract admin, Engineer instructions, correspondence control, contract registers, meeting minutes, monthly progress reporting, records management.
+description: Use for day-to-day FIDIC Red Book 2017 administration, including Engineer instructions, Notices, correspondence, contract registers, programme reviews, progress meetings, Contemporary Records, and monthly PMC/Engineer reporting.
+when_to_use: Daily or weekly contract administration, Engineer instructions, correspondence control, contract registers, meeting minutes, monthly progress reporting, records management.
 metadata:
   author: PMC Contracts Manager Plugin
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Day-to-Day Contract Administration
 
 ## Perspective
 
-You are the **PMC/Engineer contract administration team** running the contractual machinery of a live FIDIC 2017 project. Your discipline is: everything in writing, everything registered, everything date-stamped against a deadline. The Engineer acts fairly and neutrally (2017 emphasizes the Engineer's neutral role in Sub-Clause 3.7 determinations), issues instructions properly (3.3), and keeps records capable of supporting later claims and dispute boards. Administrative support, not legal advice.
+Act as the **PMC/Engineer contract administration team**. Keep communications traceable, registers current, and every contractual clock visible. Apply the Engineer's duties fairly, including agreement or determination under Sub-Clause 3.7. This is administrative support, not legal advice.
 
-**Standing rule:** Verify against the project's Particular Conditions and Contract Data before acting on any deadline; the values below are the 2017 General Conditions baseline.
+**Standing rule:** The detailed rules below are the **FIDIC Red Book 2017 General Conditions baseline**. Confirm the book, edition, Particular Conditions, and Contract Data before acting on a clause or deadline.
 
 ## When To Use
 
-- Processing and issuing Engineer instructions, site instructions, and RFIs
-- Logging and routing notices and contractual correspondence (1.3)
-- Maintaining the contract registers suite
-- Preparing minutes of progress meetings with tracked actions
-- Reviewing monthly programme updates (8.3)
-- Compiling the monthly PMC/Engineer progress report
-- Deciding what records must be preserved as Contemporary Records (20.1)
+- Processing Engineer instructions, site instructions, and RFIs.
+- Logging and routing Notices and contractual correspondence under Sub-Clause 1.3.
+- Maintaining contract registers and preparing action-tracked minutes.
+- Reviewing initial or revised programmes under Sub-Clause 8.3.
+- Compiling monthly PMC/Engineer reports.
+- Preserving Contemporary Records under Sub-Clause 20.2.3.
 
 ## Inputs To Collect First
 
-1. Current contract registers (instructions, notices, variations, claims, RFIs)
-2. Latest accepted programme and update submissions (8.3)
-3. Open items: securities/insurances expiries, pending instructions, outstanding determinations (3.7)
-4. Site records: daily diaries, progress photos, resource records, weather logs, test certificates
+1. Current instructions, Notices, variations, claims, RFI, and correspondence registers.
+2. Latest programme and Engineer response status under Sub-Clause 8.3.
+3. Open determinations, security and insurance expiries, and outstanding instructions.
+4. Daily diaries, progress photographs, resource records, weather logs, and test records.
 
-## The Registers Suite (Set Up In Mobilization, Maintain Continuously)
+## Registers Suite
 
 | Register | Purpose | Key fields |
 |----------|---------|------------|
-| Notices register (1.3) | Every contractual notice in/out with clause reference | Ref, date, clause, from/to, subject, deadline date, response due, status |
-| Instructions register (3.3) | All Engineer instructions incl. confirmed oral | Ref, date, type, clause, effect on price/programme, linked VO/claim |
-| RFI log | Technical clarifications | Ref, raised, answered, days open |
-| Drawings/documents register | Issue, revisions, approval status (1.5 priority) | Ref, rev, date, status, delayed-drawing flag (1.9) |
-| Variations register | All VOs and their price/programme status | Ref, instruction date, 12.3/13.3 status, value, EOT |
-| Claims register | Notices, detailed claims, responses (20.1/20.2) | Awareness date, notice date, time-bar date, response due |
-| Securities & insurances tracker | Expiry and renewal control | Instrument, amount, expiry, renewal action |
-| Subcontract register | Nominated/others, consents (4.4, Clause 5) | Subcontractor, scope, consent date |
-| Key personnel & plant tracker | 6.9 / 4.x compliance | Name, role, replaced/removed actions |
-| Correspondence file index | Audit trail | Same as notices register but non-contractual |
+| Notices (1.3) | Control every contractual Notice | Reference, receipt/sent date, clause, parties, subject, response deadline, status |
+| Instructions (3.5) | Control Engineer instructions and objections | Reference, date, authority, objection date, seven-day response deadline, linked Variation |
+| RFIs | Track technical clarifications without misclassifying them as Notices | Reference, raised, answered, days open |
+| Drawings/documents | Control revisions and delayed information | Reference, revision, issue/receipt date, status, 1.9 flag |
+| Variations (13.3) | Track price and programme effects | Reference, 13.3.1/13.3.2 route, submission dates, value, EOT status |
+| Claims (20.2) | Track contractual claim clocks | Awareness date, 28-day Notice date, 84-day detailed Claim date, response deadlines |
+| Securities and Insurances | Prevent expiry or non-compliance | Instrument, amount, expiry, renewal action |
+| Subcontractors (5.1/5.2) | Track subcontractor particulars and required consents | Subcontractor, scope, consent/objection, date |
+| Key personnel (6.12) | Track required personnel and replacements | Name, role, consent/status, replacement action |
+| Correspondence index | Preserve the audit trail | Reference, date, parties, subject, related Notice/register |
 
-## Engineer Instructions Discipline (Sub-Clause 3.3)
+## Engineer Instructions Discipline (Sub-Clause 3.5)
 
-- Instructions must be **in writing** and may not amend the Contract — if an instruction would change rights/obligations, treat it as a Variation (Clause 13) instead.
-- **Oral instructions**: the Contractor confirms in writing; if the Engineer does not dissent in writing within the contract period, the instruction is effective — always diarize the dissent window.
-- Every instruction records: date, clause basis, what is required, method/timing requirements (13.3.1 where a variation), and price/programme effect pending.
-- Site instructions vs Variation Instructions are distinct document streams — never blur them.
-- Instructions must be reasonable and within the Engineer's delegated authority (check the mobilization delegation matrix; 3.2).
+- Issue instructions in writing, within the Engineer's authority, and identify the contractual basis and required action. Do not use an instruction to amend the Contract informally.
+- If the Contractor objects to an instruction, it must give reasons. The Engineer must respond within **7 days** by Notice, confirming, reversing, or varying the instruction.
+- If the Engineer does not respond within those 7 days, the Engineer is **deemed to have revoked the instruction**. Diarize the objection response deadline immediately.
+- If an instruction constitutes a Variation, apply Sub-Clause 13.3.1. Do not invent an oral-instruction confirmation mechanism or make “method and timing” mandatory wording for every instruction.
+- Keep routine instructions, RFIs, and Variations distinguishable while cross-referencing related records.
 
 ## Notices & Correspondence Protocol (Sub-Clause 1.3)
 
-- Contractual notices are separate from routine correspondence: they are the documents that **create, preserve or extinguish entitlement**. Route them through the notices register with clause references and deadline dates computed immediately.
-- Confirm the delivery medium permitted (paper/electronic per Particular Conditions) and the named recipients; a notice to the wrong address is a failed notice.
-- Standard ack discipline: acknowledge within [x] days project standard, log the contractual response deadline separately.
-- Language: notices in the governing language (1.4); translations flagged as courtesy copies.
+- Treat Notices as a distinct contractual document class, not routine correspondence. Record the clause, sender, recipient, subject, and all response deadlines.
+- Verify the prescribed form, designated addresses, delivery method, and electronic system. Do not assume that delivery to an informal project address is valid.
+- Log acknowledgement separately from the substantive response deadline.
+- Use the Contract's ruling language under Sub-Clause 1.4 and identify courtesy translations.
 
-## Contemporary Records Discipline (Sub-Clause 20.1)
+## Contemporary Records Discipline (Sub-Clause 20.2.3)
 
-The party claiming must keep Contemporary Records; the Engineer should ensure the project record is strong enough to verify any claim later. Minimum dataset kept current: daily progress and resource records, weather records, access/site availability logs, drawings/instructions receipt dates, meeting minutes, photos (dated), test/inspection records, manpower histograms, subcontractor notices received.
+The claiming party keeps Contemporary Records; the Engineer may inspect and request additional records as provided by the Contract. Maintain dated, attributable project records: progress and resources, weather, access, drawings and instructions, minutes, photographs, tests, inspections, and subcontractor communications. Record monitoring arrangements without suggesting that the Engineer's records replace the claiming party's duty.
 
 ## Weekly / Monthly Cadence
 
 | Cadence | Activity |
 |---------|----------|
-| Weekly | Registers updated; instructions issued/closed; securities expiry scan; RFI aging review |
-| Bi-weekly | Progress meeting: programme vs actual, constraints list, instruction/VO status, action log |
-| Monthly | Programme update review (8.3); payment cycle support (14.3/14.6); VO & claims status; PMC monthly report |
+| Weekly | Update registers; close or escalate instructions; scan expiries; review RFI aging |
+| Bi-weekly | Review progress, constraints, instruction/Variation status, and tracked actions |
+| Monthly | Review programme and payment cycle; update Variations and Claims; issue PMC report |
 
 ## Monthly PMC / Engineer Report Skeleton
 
-1. **Executive summary** — progress vs Time for Completion; top 5 issues with contractual references
-2. **Programme** — update status, critical path movement, float consumption, extension status
-3. **Commercial** — variations (count/value/status), claims (register extract), cost-to-complete view
-4. **Payment** — statements received, certificates issued (14.6), payments made (14.7), interest exposure (14.8)
-5. **Risk & compliance** — insurances/securities status, permits, key personnel, QA records
-6. **Correspondence & notices** — register extracts for the month
-7. **Actions** — owner + due date table
+1. **Executive summary** — progress, principal risks, and decisions required.
+2. **Programme** — submission and Notice status, critical path movement, and EOT status.
+3. **Commercial** — Variations, Claims, determinations, and forecast exposure.
+4. **Payment** — Statements, IPCs, payments, and delayed-payment financing under 14.8.
+5. **Risk and compliance** — securities, Insurances, permits, personnel, and quality records.
+6. **Correspondence and Notices** — register extracts and overdue responses.
+7. **Actions** — owner, due date, and source reference.
 
 ## Meeting Minutes Skeleton
 
-> Minutes Ref / date / attendees / apologies.
-> 1. Programme status (vs accepted update, ref 8.3)
-> 2. Constraints & access (ref 2.1)
-> 3. Instructions issued & pending (3.3) — register extract
-> 4. Variations status (13.3)
-> 5. Claims & notices status (20.1/20.2) — deadlines table
-> 6. Quality, HSE, permits
-> 7. Actions: [action / owner / due / ref]
+> Minutes reference / date / attendees.
+> 1. Programme status and 8.3 review actions.
+> 2. Access and constraints (2.1).
+> 3. Instructions and objections (3.5).
+> 4. Variations (13.3).
+> 5. Claims and Notices (20.2), with deadlines.
+> 6. Quality, HSE, and permits.
+> 7. Actions: owner / due date / reference.
 
 ## QA Checklist
 
-- [ ] All instructions this week logged with clause basis and price/programme flags
-- [ ] No contractual notice left unregistered or without a computed deadline
-- [ ] Programme update reviewed against 8.3 requirements; response issued within contract period
-- [ ] Contemporary Records current and attributable (dated, signed, stored)
-- [ ] Monthly report issued with register extracts, not narrative-only
-- [ ] Expanding issues pre-flagged: anything drifting toward a claim is notified while it can still be administered
+- [ ] Every instruction is under 3.5 and every objection has a seven-day response deadline.
+- [ ] No Notice is unregistered or without its contractual clock.
+- [ ] Programme responses use the correct 8.3 timing and Notice of No-objection terminology.
+- [ ] Subcontractors (5.1/5.2), Key personnel (6.12), and Contemporary Records (20.2.3) registers are current.
+- [ ] Monthly reporting uses register extracts and identified sources.
+- [ ] Potential Claims are escalated without prejudging entitlement or validity.

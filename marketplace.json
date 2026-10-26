@@ -7,7 +7,7 @@
       "name": "pmc-contracts-manager",
       "source": "./pmc-contracts-manager",
       "description": "FIDIC 2017 contracts-management skills for PMC consultants: tender review, mobilization, administration, claims & time bars, EOT & delay analysis, variations, payments & final account, disputes.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "Productivity",
       "tags": ["fidic", "contracts", "pmc", "claims", "engineer"]
     }

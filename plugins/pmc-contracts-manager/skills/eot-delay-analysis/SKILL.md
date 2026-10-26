@@ -1,93 +1,102 @@
 ---
 name: eot-delay-analysis
-description: Use when assessing Extension of Time (EOT) claims or delays — reviewing EOT entitlement under Sub-Clause 8.4, selecting and reviewing delay analysis methods (Time Impact Analysis, windows, as-planned vs as-built, collapsed as-built per the SCL Delay and Disruption Protocol), checking criticality and concurrency, assessing prolongation quantum, and drafting the Engineer's EOT assessment or determination. Acts as the PMC/Engineer neutral assessor of time entitlement.
-when_to_use: EOT assessment, delay analysis review, TIA review, criticality and concurrency assessment, prolongation cost review, EOT determination letters, acceleration questions.
+description: Use when assessing FIDIC Red Book 2017 Extension of Time claims or delays, including entitlement, criticality, delay-analysis methods, concurrency, prolongation substantiation, and Engineer agreement or determination.
+when_to_use: EOT assessment, delay-analysis review, Time Impact Analysis, criticality and concurrency assessment, prolongation cost review, EOT determinations, acceleration questions.
 metadata:
   author: PMC Contracts Manager Plugin
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # EOT Assessment & Delay Analysis
 
 ## Perspective
 
-You are the **PMC/Engineer** assessing whether delay events entitle the Contractor to an extension of the Time for Completion (8.4), how many days, and what prolongation Cost follows. Neutrality and method discipline are everything: a defensible EOT assessment follows a recognized methodology, works from contemporaneous records and updated programmes, and confronts concurrency explicitly. Administrative and technical assessment support, not legal advice or programming testimony.
+Act as the **PMC/Engineer** assessing whether completion for the purposes of Sub-Clause 10.1 is or will be delayed, the contractual ground, and the resulting EOT. Separate contractual entitlement from analytical practice, and time from money. This is administrative and technical support, not legal advice or expert testimony.
 
-**Standing rule:** EOT entitlement requires (i) a valid Notice of Claim under 20.2, (ii) a ground under Sub-Clause 8.4 or a delay-related Sub-Clause, (iii) demonstrated criticality on a compliant programme, (iv) proper analysis method, and (v) mitigation considered. Confirm all Particular Conditions amendments first (some contracts delete or recast 8.4).
+**Standing rule:** The detailed rules below are the **FIDIC Red Book 2017 General Conditions baseline**. Confirm the book, edition, Particular Conditions, Special Provisions, and Contract Data before acting. SCL Delay and Disruption Protocol methods are analytical guidance, not contractual wording.
 
 ## When To Use
 
-- Contractor's EOT claim received — assess entitlement, method, and days
-- Preparing the Engineer's assessment or 3.7 determination on time
-- Deciding which delay analysis method is appropriate for the case
-- Concurrency, float ownership, or acceleration questions arise
-- Reviewing whether prolongation cost substantiation is adequate
+- A Contractor's EOT Claim requires review or an Engineer's response.
+- A delay-analysis method must be selected or tested.
+- Criticality, concurrency, float, mitigation, or acceleration is in issue.
+- Prolongation Cost substantiation requires review under a specific entitlement clause.
 
-## EOT Grounds Map (Sub-Clause 8.4 + delay-related clauses)
+## Contract Map
 
-| Ground (8.4) | Basis |
-|--------------|-------|
-| (a) | Variation or substantial change in quantity (unless circumstantial to other ground) — 13.3.2 |
-| (b) | A cause under Sub-Clause 8.5 (authorities) or a ground in other Sub-Clauses |
-| (c) | Exceptional Event of the kind described in Clause 19 |
-| (d) | Delay or impediment caused by or for which the Employer is responsible (e.g. 2.1 access, 1.9 drawings, 8.1 commencement issues) |
-| (e) | Unforeseeable shortage of personnel/goods caused by epidemic/government action |
-| (f) | Any delay/impediment attributable to the Employer, Engineer's personnel, or their contractors |
-| Related | 4.12 unforeseeable physical conditions; 1.9 delayed drawings/instructions; 2.1 access; 5.x nominated subcontractor delays; 8.5 authorities; 16/19 suspension-linked; 13.7/13.8 changes |
+| Provision | Subject | Use |
+|-----------|---------|-----|
+| 8.4 [Advance Warning] | Early warning of probable delay | Do not cite as the EOT entitlement clause |
+| 8.5 [Extension of Time for Completion] | EOT entitlement and concurrency | Primary EOT provision |
+| 8.6 [Delays Caused by Authorities] | Specific authority-delay entitlement | Apply its own payment/EOT wording |
+| 8.7 [Rate of Progress] | Progress and revised methods | Do not confuse with authority delay |
+| 8.8 [Delay Damages] | Employer Delay Damages | Keep separate from EOT and prolongation |
+| 13.3.1 [Variation by Instruction] | Variation-driven EOT and price adjustment | No 20.2 compliance requirement for the instructed Variation |
+| Clause 18 [Exceptional Events] | Exceptional Events and consequences | Apply the specific prevention/notice/entitlement wording |
+| 20.2 [Claims For Payment and/or EOT] | Claims procedure | Apply Notice, detailed Claim, and response clocks where required |
 
-The Contractor must give notice under 20.2 and demonstrate the delay is on the critical path to Time for Completion; the Engineer may also be obliged to revise the programme implications (8.3) and consider required steps to overcome delay (8.6 rate of progress context).
+## EOT Grounds Under Sub-Clause 8.5
 
-## Method Selection (SCL Delay & Disruption Protocol 2nd Ed. Baseline)
+EOT entitlement under Sub-Clause 8.5 requires delay to completion for the purposes of Sub-Clause 10.1, to the extent caused by:
 
-| Method | Type | Best for | Cautions |
-|--------|------|----------|----------|
-| Time Impact Analysis (TIA) | Prospective | Claims assessed as they occur; Contractor submits revised programme with the event inserted | Requires reliable updated programme; Engineer checks logic of inserted event |
-| Windows analysis (period-by-period) | Retrospective | Final EOT at closeout; multiple overlapping delays | Depends on good progress records; choose windows defensibly (update dates/decision points) |
-| As-planned vs as-built | Retrospective | Quick triage; simple, short projects | Does not by itself prove criticality or causation |
-| Collapsed as-built | Retrospective | Testing "but for" the delay event | Sensitive to as-built data quality; model risk |
-| Impacted as-planned | Prospective | Early estimates on static baseline | Ignores actual progress — weakest alone |
+- **(a)** a Variation, with no requirement to comply with Sub-Clause 20.2;
+- **(b)** another Sub-Clause giving an EOT entitlement;
+- **(c)** exceptionally adverse climatic conditions as defined in 8.5;
+- **(d)** Unforeseeable shortages of personnel or Goods caused by epidemic or governmental actions; or
+- **(e)** delay, impediment, or prevention caused by or attributable to the Employer, Employer's Personnel, or Employer's other contractors on Site.
 
-**Assessment rules of practice:** use the most recent accepted programme compliant with 8.3; verify the critical path actually runs through the affected activities; require the analysis to show causation (event → activity → critical path → days) rather than assert it; cross-check against as-built records.
+Sub-Clause 8.5 also addresses measured quantity increases greater than 10% that delay completion. Review previous determinations as required: total EOT may be increased, not decreased.
 
-## Concurrency & Float — Working Positions
+**EOT does not itself create an automatic entitlement to Cost or profit.** Identify the specific ground clause and apply its payment wording. Do not attach a standard Cost-plus-profit outcome to every Employer-responsible delay.
 
-- **Dominant cause:** where multiple causes compete, apportion to the dominant effective cause of delay (SCL guidance).
-- **True concurrency** (two or more events delay completion at the same time, each alone sufficient): Contractor EOT for Employer-risk periods, but generally no prolongation Cost for the concurrent Contractor-risk period (mitigation of Cost).
-- **Float:** programme float belongs to the project unless the contract says otherwise; the Employer may not use the Contractor's float for its own convenience, and the Contractor's use of float is not a delay — but consuming float can convert a later event into criticality (Time-at-Risk visibility in 8.3 programmes).
-- Record the position taken in the assessment with reasoning; concurrency findings must be evidence-based, not asserted.
+## Delay-Analysis Method Selection
+
+| Method | Suitable use | Principal caution |
+|--------|--------------|-------------------|
+| Time Impact Analysis | Prospective assessment as events arise | Requires a reliable contemporaneous programme and sound inserted-event logic |
+| Windows analysis | Retrospective assessment of multiple periods | Window selection and progress records materially affect results |
+| As-planned versus as-built | Initial comparison in simple cases | Does not alone establish criticality or causation |
+| Collapsed as-built | Testing a “but for” hypothesis | Sensitive to as-built quality and model assumptions |
+| Impacted as-planned | Limited prospective illustration | May not reflect actual progress or changing critical paths |
+
+Use the best available Sub-Clause 8.3 programme and Contemporary Records. Demonstrate **event → affected activity → critical path → completion delay**. State assumptions, data limitations, logic changes, and sensitivity checks rather than presenting a method label as proof.
+
+## Concurrency and Float
+
+- For concurrent Employer-responsibility and Contractor-responsibility delay, apply the rules and procedures in the **Special Provisions**. If none are stated, assess EOT as appropriate with due regard to all relevant circumstances, as Sub-Clause 8.5 requires.
+- Do not impose an automatic SCL Cost rule, a universal dominant-cause rule, or a universal float-ownership rule. Identify the Contract wording and analyze actual critical effects.
+- Record competing causes, timing, critical paths, evidence, and the reasoning supporting the result.
 
 ## Assessment Workflow
 
-1. **Notice check**: 20.2.1 notice valid (see skill `claim-notice-management`)? Note bar consequences precisely.
-2. **Ground mapping**: which 8.4 ground(s)/clauses are cited; is the event Employer-risk or neutral-risk? Contractor-risk events get no EOT.
-3. **Programme check**: latest accepted programme status; if analysis relies on a non-compliant model, require resubmission — note the 42-day response clock is managed via interim response where needed (20.2.5).
-4. **Criticality & causation review**: does the event sit on the critical path? Inserted-event logic correct? Records corroborate the as-built sequencing?
-5. **Concurrency & float**: apply the positions above; document findings.
-6. **Quantify days**: state EOT days with dates (revised Time for Completion if applicable), distinguishing excusable-relevant vs excusable-neutral where the contract distinguishes Cost.
-7. **Prolongation Cost review** (where Cost follows the ground): site overheads actual records first (recorded costs, not percentages); head-office overheads by actual cost or recognized formula (Eichleay in US-influenced forums; Hudson-type rates only with caution and evidence); financing charges per contract; disruption separately analyzed by measured mile; profit where the ground allows it (8.4 typically entitles Cost + reasonable profit for Employer-responsible grounds — verify the clause text).
-8. **Mitigation & 8.6**: what reasonable steps were required; acceleration is not presumed — constructive acceleration needs clear elements (entitlement established, instruction/denial, notice, acceleration done, cost).
-9. **Issue the assessment** (letter skeleton below); if challenged, proceed to 3.7 consultation/determination.
+1. **Verify the route.** Check 20.2 Notice and detailed Claim compliance where applicable; preserve the instructed-Variation exception under 8.5(a) and 13.3.1.
+2. **Map each ground.** Identify the exact event, responsible risk, applicable Sub-Clause, and separate time/payment consequences.
+3. **Validate the model.** Check programme status, calendars, logic, data date, progress, and contemporaneous records.
+4. **Test causation and criticality.** Explain why completion was or will be delayed, not merely why an activity slipped.
+5. **Address concurrency and float.** Apply 8.5 and the Special Provisions with explicit findings.
+6. **Quantify EOT.** State days and the revised Time for Completion, and review prior determinations without reducing total EOT.
+7. **Assess money separately.** Use the specific entitlement clause and substantiated records; keep disruption, financing, and profit analytically distinct.
+8. **Consider progress measures.** Use 8.4 Advance Warning and 8.7 Rate of Progress in their proper contexts; do not presume acceleration or constructive acceleration.
+9. **Conclude under the applicable procedure.** For Claims, follow 20.2.5 and 3.7; for instructed Variations, follow 13.3.1 and 3.7.
 
-## Engineer's EOT Assessment Skeleton
+## Engineer Assessment Skeleton
 
-> Ref / date / to both parties.
-> **Engineer's Assessment — Extension of Time, Claim [ref], Sub-Clauses 8.4 / 20.2**
-> 1. Notice compliance: [dates, validity]
-> 2. Ground: [8.4 sub-paragraph / clause relied on]
-> 3. Programme and method relied on: [accepted programme rev/date; TIA rev; windows]
-> 4. Criticality finding: [critical path description, evidence]
-> 5. Concurrency finding: [analysis]
-> 6. **Determination of time:** EOT of [x] days; revised Time for Completion [date].
-> 7. **Cost:** [assessment basis, amounts, or "to be assessed following substantiation under 20.2.4"]
-> 8. Notice of Dissatisfaction: this assessment is subject to Sub-Clause 3.7.5 (14 days) and Clause 21.
+> **EOT assessment — Claim/Variation [reference], Sub-Clauses [8.5 / other ground]**
+> 1. Procedural route and applicable dates: [20.2 or 13.3.1].
+> 2. Contractual grounds: [separate time and payment grounds].
+> 3. Programme, records, and method: [revisions, data, limitations].
+> 4. Criticality and causation findings: [evidence].
+> 5. Concurrency and Special Provisions: [findings].
+> 6. EOT: [days and revised Time for Completion].
+> 7. Payment: [specific clause and assessment, or outstanding particulars].
+> 8. Agreement/determination status and applicable **28-day NOD** deadline under 3.7.5.
 
 ## QA Checklist
 
-- [ ] Notice valid before entitlement analyzed; consequences stated if barred
-- [ ] Ground cited matches the event facts (employer-risk vs neutral vs contractor-risk)
-- [ ] Analysis method justified; programme used is accepted/compliant with 8.3
-- [ ] Critical path verified against records, not taken from the claim at face value
-- [ ] Concurrency and float addressed explicitly with reasoning
-- [ ] Prolongation cost built from contemporaneous records; formula use explained and evidence-backed
-- [ ] Mitigation/8.6 considered; no constructive acceleration finding without all elements
-- [ ] Assessment issued within the 42-day response window or via documented interim response
+- [ ] EOT is under 8.5; Advance Warning, authority delay, progress, and Delay Damages use 8.4, 8.6, 8.7, and 8.8 respectively.
+- [ ] Every event has an exact contractual ground and demonstrated completion impact.
+- [ ] Instructed Variations are not incorrectly subjected to 20.2.
+- [ ] Cost and profit are assessed only under their specific entitlement wording.
+- [ ] Concurrency follows the Special Provisions or 8.5's relevant-circumstances rule.
+- [ ] SCL methods are identified as analytical guidance rather than contract terms.
+- [ ] Determination correspondence states the 28-day NOD period.

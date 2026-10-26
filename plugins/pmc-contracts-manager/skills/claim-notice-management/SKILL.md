@@ -4,7 +4,7 @@ description: Use when a FIDIC 2017 payment, EOT, DNP, or other entitlement claim
 when_to_use: Claim notice validity check, time-bar computation, claims register, detailed claim preparation or review, Engineer response letters, determination procedure, Employer or Contractor claims.
 metadata:
   author: PMC Contracts Manager Plugin
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Claims & Notice Management (FIDIC 2017 Clause 20 Regime)
