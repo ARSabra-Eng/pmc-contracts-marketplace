@@ -1,0 +1,15 @@
+{
+  "name": "pmc-contracts-marketplace",
+  "description": "Personal local marketplace for the PMC Contracts Manager plugin (FIDIC 2017 contract lifecycle skills for PMC consultants).",
+  "pluginRoot": "plugins",
+  "plugins": [
+    {
+      "name": "pmc-contracts-manager",
+      "source": "./pmc-contracts-manager",
+      "description": "FIDIC 2017 contracts-management skills for PMC consultants: tender review, mobilization, administration, claims & time bars, EOT & delay analysis, variations, payments & final account, disputes.",
+      "version": "1.0.0",
+      "category": "Productivity",
+      "tags": ["fidic", "contracts", "pmc", "claims", "engineer"]
+    }
+  ]
+}

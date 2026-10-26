@@ -1,0 +1,23 @@
+{
+  "name": "pmc-contracts-manager",
+  "version": "1.0.0",
+  "description": "FIDIC 2017 contracts-management skills for PMC consultants covering the full lifecycle: tender & contract review, award mobilization, day-to-day administration, claim notices & time bars, EOT & delay analysis, variations & valuation, payment certification & final account, and DAAB dispute resolution. Drafts and advises from the Engineer/PMC neutral-administrator perspective.",
+  "author": {
+    "name": "PMC Contracts Manager"
+  },
+  "homepage": "",
+  "repository": "",
+  "license": "MIT",
+  "keywords": [
+    "fidic",
+    "construction-contracts",
+    "pmc",
+    "claims-management",
+    "eot",
+    "delay-analysis",
+    "variations",
+    "engineer",
+    "contract-administration"
+  ],
+  "skills": "skills"
+}
