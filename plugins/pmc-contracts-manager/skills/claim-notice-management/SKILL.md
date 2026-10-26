@@ -1,7 +1,7 @@
 ---
 name: claim-notice-management
-description: Use when handling FIDIC 2017 claims and notices — validating or issuing Notices of Claim under Sub-Clauses 20.1/20.2, checking 28-day time-bar validity and computing deadlines, managing the claims register, drafting fully detailed claims or the Engineer's 42-day responses, running Agreement or Determination (3.7) procedures, and handling Employer's Financial Claims (2.5). Acts as PMC/Engineer neutral administrator for the entire claims process.
-when_to_use: Claim notice validity check, time-bar computation, claims register, detailed claim preparation or review, Engineer response letters, determination procedure, Employer claims.
+description: Use when a FIDIC 2017 payment, EOT, DNP, or other entitlement claim requires notice review, deadline calculation, contemporary-record control, detailed claim preparation, agreement or determination, or claims-register administration.
+when_to_use: Claim notice validity check, time-bar computation, claims register, detailed claim preparation or review, Engineer response letters, determination procedure, Employer or Contractor claims.
 metadata:
   author: PMC Contracts Manager Plugin
   version: "1.0.0"
@@ -11,90 +11,121 @@ metadata:
 
 ## Perspective
 
-You are the **PMC/Engineer** administering the claims process neutrally: validating notice compliance, managing the statutory-style clocks, ensuring both parties' entitlements are processed under Sub-Clauses 20.1/20.2 and determined under 3.7. Missed time bars and sloppy notice handling are the single largest source of disputes — your value is precision on dates, completeness on records, and neutrality in language. Administrative support, not legal advice.
+You are the **PMC/Engineer** administering claims neutrally: checking notices, controlling contractual clocks, preserving records, and processing entitlement under Sub-Clauses 20.1/20.2 and 3.7. Precision on dates, completeness of records, and neutrality in language are essential. This is administrative support, not legal advice.
 
-**Standing rule:** The deadlines below are the 2017 General Conditions baseline. Particular Conditions frequently amend them — verify before computing any bar. Days are calendar days unless stated otherwise.
+**Standing rule:** These deadlines are the FIDIC Red Book 2017 General Conditions baseline. Confirm the book, edition, Particular Conditions, and Contract Data before calculating any deadline. Days are calendar days unless the Contract states otherwise.
 
 ## When To Use
 
-- A Notice of Claim has been received (or is about to be issued) — check validity and deadlines
-- Building or auditing the claims register
-- Preparing or reviewing a fully detailed claim
-- Drafting the Engineer's response within 42 days (20.2.5)
-- Running consultation and Agreement or Determination (3.7)
-- Handling Employer's Financial Claims (2.5 / Clause 20 employer claims)
+- A Notice of Claim has been received or is about to be issued
+- Notice validity, late-notice consequences, or deemed validity must be assessed
+- A claims register or contemporary-record system must be built or audited
+- A fully detailed, interim, or final claim must be prepared or reviewed
+- A Claim requires agreement or determination under 20.2.5 and 3.7
+- An Employer or Contractor claim concerns payment, EOT, or extension of the DNP
 
 ## The 2017 Claims Architecture
 
 | Step | Requirement | Clause | Deadline (2017 baseline) |
 |------|-------------|--------|--------------------------|
-| 1 | Notice of Claim — describes the event/ circumstances, identifies the Sub-Clause relied on, states entitlement sought, includes the time-bar warning statement | 20.2.1 | Within **28 days** of the date the claiming party became Aware (or should have become aware) |
-| 2 | Keep Contemporary Records | 20.1 / 20.2.2 | Ongoing from awareness |
-| 3 | Fully detailed claim — causes, grounds, entitlement, quantum/time impact, records | 20.2.4 | Within **42 days** of awareness (or other period in Contract Data) |
-| 4 | Engineer's response — approve / disapprove with comments / notice of interim response | 20.2.5 | Within **42 days** of receiving the fully detailed claim |
-| 5 | Consultation between parties + Engineer | 3.7.1–3.7.3 | Promptly on request / when Engineer sees need |
-| 6 | Agreement or Determination | 3.7.4 | Engineer determines within **42 days** after consultation ends (or reference) |
-| 7 | Notice of Dissatisfaction (NOD) | 3.7.5 | Within **14 days** of the determination (parties); else final & binding |
-| 8 | Escalation | Clause 21 | NOD → DAAB (see skill `dispute-resolution`) |
+| 1 | Notice of Claim describing the event or circumstance | 20.2.1 | As soon as practicable and no later than **28 days** after actual or constructive awareness |
+| 2 | Engineer's initial response if the Notice is considered late | 20.2.2 | Within **14 days after receiving the Notice of Claim**; otherwise it is deemed to be a valid Notice |
+| 3 | Keep Contemporary Records | 20.2.3 | Ongoing; the Engineer may monitor and instruct further records |
+| 4 | Fully detailed Claim: event, contractual/legal basis, records, and payment/EOT/DNP particulars | 20.2.4 | Within **84 days** after awareness, or another period proposed by the claiming Party and agreed by the Engineer |
+| 5 | Agreement on the Claim | 20.2.5 / 3.7.3 | Within **42 days** after the applicable start date; extendable by agreement |
+| 6 | Engineer's determination if no agreement | 3.7.3 | Within a further **42 days** after the agreement period expires |
+| 7 | Notice of Dissatisfaction with the determination | 3.7.5 | Within **28 days** after receiving the Engineer's determination, or after the determination time limit expires for a deemed rejection |
+| 8 | Referral to the DAAB | 21.4.1 | Within **42 days** after giving or receiving the 3.7.5 NOD |
 
-**Effect of a missed 28-day notice (20.2.1):** the Time for Completion shall not be extended, the claiming party loses entitlement to Cost, and the other party is discharged from liability — **except** that the Employer is *not* discharged of payment obligations for Contractor payment claims. This "payment survives, EOT and Cost die" asymmetry is the signature feature of 20.2.1 — state it precisely in every assessment.
+### Notice and Detailed-Claim Consequences
 
-**Employer's Financial Claims (2.5):** the Employer claims payment/damages as soon as practicable after awareness, with the detailed claim within 42 days; the process runs through the same Clause 20 machinery in 2017.
+**Missed 28-day Notice (20.2.1):** the claiming Party shall not be entitled to any additional payment; the Contract Price shall not be reduced for an Employer Claim; the Time for Completion or DNP shall not be extended as applicable; and the other Party is discharged from liability in connection with the event or circumstance. Do not create exceptions that are not stated in the Contract.
+
+**Late Notice response (20.2.2):** if the Engineer does not give a reasoned lateness Notice within 14 days, the Notice of Claim is deemed to be a valid Notice. The other Party may record its disagreement, which the Engineer reviews under 20.2.5. A claiming Party disputing a lateness Notice must explain its disagreement or justify late submission in the fully detailed Claim.
+
+**Missing contractual/legal basis (20.2.4):** if the fully detailed Claim does not include the statement of contractual and/or other legal basis within the applicable 84-day period, the Notice of Claim lapses. The Engineer must notify the claiming Party within 14 days after expiry; otherwise the Notice of Claim is deemed valid, subject to the other Party's disagreement procedure.
+
+**Employer and Contractor Claims:** Sub-Clause 20.1 defines Claims by either Party. Payment, reduction of Contract Price, EOT, and DNP-extension Claims follow 20.2. Do not use Sub-Clause 2.5 as an Employer-claims provision; in the Red Book 2017 it concerns Site Data and Items of Reference.
 
 ## Time-Bar Computation — Worked Example
 
-> Date of event: 2 March. Contractor states awareness on 2 March (verify against records — awareness is when a reasonable person in the position of the Contractor becomes aware or should have become aware).
-> - **Notice of Claim deadline:** 28 days → 30 March (2 Mar + 28). Notice received 27 March → **valid**. Log: 1 day margin.
-> - **Fully detailed claim deadline:** 42 days of awareness → 13 April (or agreed longer period). If submitted 20 April without agreed extension → **non-compliant**; Engineer reminds and manages consequences.
-> - **Engineer response deadline:** 42 days from receipt of the fully detailed claim → diarized on day of receipt.
-> Always record: event date, awareness date (with evidence), notice received date, computed deadlines, and the register status.
+> Awareness date supported by records: **2 March**.
+> - **Notice of Claim:** 2 March + 28 days = **30 March**. Notice received 27 March is within the baseline period.
+> - **Engineer's late-notice response:** if the Engineer considers the Notice late, diarize 14 days from its actual receipt under 20.2.2.
+> - **Fully detailed Claim:** 2 March + 84 days = **25 May**, unless another period is proposed by the claiming Party and agreed by the Engineer.
+> - **Agreement and determination:** calculate separately under 3.7.3 from the applicable receipt date or additional-particulars date; do not merge them into a single response clock.
+>
+> Record the event date, evidenced awareness date, receipt dates, deadline calculations, agreed extensions, and deemed outcomes. State the date-arithmetic convention used and verify it against the Contract and applicable law.
 
 ## Notice Validity Check (Engineer-Side)
 
-1. Identify what was served, on whom, at the address in 1.3, on what date — obtain proof of delivery.
-2. Does it state the **Sub-Clause relied upon** and the **event/circumstances**? (A bare "we reserve our rights" letter is not a Notice of Claim — assess substance, note deficiency in writing.)
-3. Was it within **28 days** of the applicable awareness date?
-4. Does it claim **EOT and/or Cost/Payment**? Match entitlement to the cited ground clause (8.4 list, 4.12, 19, 1.9, 2.1, etc.).
-5. Register it; issue a written acknowledgment recording the deadlines opened and what the claiming party must do next (Contemporary Records; detailed claim date).
+1. Confirm service, recipients, permitted medium, addresses, and proof of delivery under 1.3.
+2. Confirm that the communication identifies itself as a Notice and states the Sub-Clause under which it is given as required by 1.3.
+3. Check whether it describes the event or circumstance under 20.2.1. Do not reject a Notice merely because quantum or full legal particulars will be supplied later.
+4. Establish the awareness date from contemporaneous evidence and calculate the 28-day period.
+5. If late, issue the reasoned 20.2.2 Notice within 14 days after receipt. If no such Notice is issued, record deemed validity and any disagreement by the other Party.
+6. Register the Notice and diarize the 84-day detailed-Claim deadline and all subsequent 3.7 clocks.
 
-## Notice of Claim Skeleton (Issuing Side — PMC issuing for Employer or reminding Contractor of requirements)
+## Notice of Claim Skeleton
 
-> Ref / date / to Contractor (per 1.3 addresses).
-> **NOTICE OF CLAIM — Sub-Clause 20.1 / 20.2.1**
-> 1. Event and circumstances: [description, dates, location of records]
-> 2. Ground: [e.g. Sub-Clause 8.4(c) — delay caused by Employer; Sub-Clause 1.9 delayed drawings]
-> 3. Entitlement: extension of Time for Completion of [x] days and/or Cost of [amount/currency, basis]
-> 4. Time-bar statement: this Notice is given within 28 days of the date on which we became aware, or should have become aware, of the event (20.2.1).
-> 5. Contemporary Records are being kept and are available for inspection (20.1).
-> 6. Fully detailed Claim to follow within 42 days of awareness (20.2.4).
+> Ref / date / to Engineer (per 1.3 addresses).
+> **NOTICE OF CLAIM — Sub-Clause 20.2.1**
+> 1. Event or circumstance: [description and dates].
+> 2. Contractual provision relied on for this Notice: 20.2.1; entitlement ground(s): [Sub-Clause(s), as presently understood].
+> 3. Relief expected: [additional payment / reduction of Contract Price / EOT / extension of DNP / other relief, with particulars to follow].
+> 4. Awareness: [actual or constructive awareness date and supporting record].
+> 5. Contemporary Records are being kept under 20.2.3 and are available for monitoring.
+> 6. A fully detailed Claim will follow within 84 days after awareness under 20.2.4, or within another period proposed and agreed by the Engineer.
+
+## Fully Detailed and Continuing-Effect Claims
+
+A fully detailed Claim under 20.2.4 must contain: a detailed event description; the contractual and/or other legal basis; all Contemporary Records relied on; and detailed supporting particulars of payment, reduction of Contract Price, EOT, or DNP extension as applicable.
+
+For a continuing-effect Claim under **20.2.6**, submit the first fully detailed Claim as an interim Claim, further interim Claims at **monthly intervals** with accumulated amounts, and a final fully detailed Claim within **28 days** after the end of the effects, or another agreed period.
+
+Under 20.2.7, include reasonably substantiated amounts in Payment Certificates until the Claim is agreed or determined. Any failure to comply with an applicable claims provision is taken into account only to the extent it prevented or prejudiced proper investigation of the Claim.
 
 ## Claims Register Template
 
-| Ref | Event / clause | Awareness date | Notice date | Notice valid? | Detailed claim due | Received | Engineer response due | 3.7 status | EOT claimed / assessed | Cost claimed / assessed | NOD? | Status |
-|-----|----------------|----------------|-------------|---------------|--------------------|----------|-----------------------|------------|------------------------|-------------------------|------|--------|
-| CL-01 | 1.9 delayed drawings | 02-Mar | 27-Mar | Yes (28d ok) | 13-Apr | — | +42d of receipt | — | 21 d / — | 84,500 / — | No | Detailed claim awaited |
+| Ref | Event / ground | Awareness | Notice received | 20.2.2 response due | Detailed Claim due | Received | 3.7 agreement due | Determination due | NOD due | Relief claimed / assessed | Status |
+|-----|----------------|-----------|-----------------|---------------------|--------------------|----------|-------------------|-------------------|---------|---------------------------|--------|
+| CL-01 | 1.9 delayed drawings | 02-Mar | 27-Mar | 10-Apr | 25-May | — | +42d from applicable start | +42d after agreement period | +28d from determination | 21 d; 84,500 / — | Detailed Claim awaited |
 
-## Engineer's 42-Day Response Letter Skeleton
+## Agreement or Determination Letter Skeleton
 
-> Ref / date / to both parties.
-> **Engineer's Response — Sub-Clause 20.2.5, Claim [ref]**
-> 1. Notice compliance: [compliant/non-compliant, with reasoning and dates]
-> 2. Detailed claim: [received complete / incomplete — particularize missing elements: records, programme analysis, quantum build-up]
-> 3. Preliminary view on grounds: [entitlement appears/not appears to arise under Sub-Clause x.y because …]
-> 4. Further action: [consultation proposed under 3.7.1; additional particulars requested by …]
-> 5. Interim response notice: if the 42 days cannot be met with a substantive response, state that an interim response is given and the date a substantive response will follow (20.2.5).
+> Ref / date / to both Parties.
+> **Agreement or Determination — Sub-Clauses 20.2.5 and 3.7, Claim [ref]**
+> 1. Claim and submission history: [Notice, fully detailed Claim, additional particulars, and receipt dates].
+> 2. Notice status: [timely / late Notice issued / deemed valid], including any disagreement and justification reviewed.
+> 3. Consultation and positions: [meetings, submissions, and areas of agreement/disagreement].
+> 4. Contractual and legal basis: [reasoned findings].
+> 5. Agreement or determination: [payment / Contract Price reduction / EOT / DNP extension], with calculations and reasons.
+> 6. NOD: state the 28-day period under 3.7.5 and the required title and content.
 
 ## Determination Notes (3.7)
 
-- Consult first (3.7.2): invite both parties, minute positions; agreements are recorded and binding.
-- If no agreement: the Engineer **determines within 42 days**, giving reasons, taking a neutral and fair position — each party to be heard before deciding.
-- The determination binds until revised by DAAB/arbitration once NOD windows lapse; issue in writing with the 14-day NOD warning (3.7.5).
+- The Engineer acts neutrally and consults with both Parties; record submissions, discussions, and reasons.
+- The 3.7.3 agreement period is 42 days unless extended by agreement. If no agreement is reached, the determination is due within a further 42 days.
+- For a Claim, failure to meet the applicable 3.7.3 determination deadline means the Engineer is deemed to have rejected the Claim. Diarize the resulting 28-day NOD period.
+- Under 20.2.5, additional particulars do not suspend the obligation to respond on the contractual/legal basis within the agreement time limit. Receipt of the additional particulars starts a fresh agreement clock for the remaining matters.
+- A determination not challenged by a valid NOD becomes final and binding. Partial NODs are severable as stated in 3.7.5.
+
+## Common Mistakes
+
+- Using 42 days instead of 84 days for the fully detailed Claim
+- Omitting the 14-day late-notice response and deemed-validity mechanism
+- Treating 20.2.5 as a standalone 42-day response with an invented interim-response procedure
+- Repeating a payment-survival exception that is not in 20.2.1
+- Using 14 days instead of 28 days for a 3.7.5 NOD
+- Citing 2.5 as the Employer's financial-claims clause or 20.1 as the Contemporary Records provision
 
 ## QA Checklist
 
-- [ ] Every claim: event date, awareness date + evidence, notice date, computed deadlines all in the register
-- [ ] Notice validity assessed on substance (clause cited + event described), deficiencies noted in writing
-- [ ] 42-day detailed-claim and response deadlines diarized the day they open
-- [ ] 20.2.1 consequence stated precisely (EOT/Cost barred; payment survives) where a bar bites
-- [ ] Determinations follow consultation, give reasons, and warn of the 14-day NOD window
-- [ ] Contemporary Records verified as actually existing — not merely promised
+- [ ] Book, edition, Particular Conditions, and Contract Data verified before calculating deadlines
+- [ ] Awareness and receipt dates supported by evidence; date arithmetic recorded
+- [ ] Late-notice response, deemed validity, detailed-Claim, agreement, determination, and NOD clocks tracked separately
+- [ ] Fully detailed Claim contains every element required by 20.2.4
+- [ ] Continuing-effect Claims follow 20.2.6 monthly and final-submission requirements
+- [ ] Time-bar consequences and deemed outcomes stated precisely without invented exceptions
+- [ ] Determinations are neutral, reasoned, and include the 28-day NOD warning
+- [ ] Contemporary Records verified as existing, dated, attributable, and available

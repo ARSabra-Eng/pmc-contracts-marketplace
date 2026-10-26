@@ -1,7 +1,7 @@
 ---
 name: dispute-resolution
-description: Use when a contract dispute escalates under FIDIC 2017 Clause 21 — referring disputes to the DAAB, managing the 84-day DAAB decision and 28-day Notice of Dissatisfaction, amicable settlement (56 days), arbitration support (ICC or rules in the Contract Data), preparing referral bundles, chronologies and records, and supporting dispute avoidance through 3.7 consultation and standing DAAB practice. Acts as PMC/Engineer dispute-administration support.
-when_to_use: DAAB referral, dispute board administration, Notice of Dissatisfaction, amicable settlement, arbitration preparation, records bundle, dispute avoidance.
+description: Use when a FIDIC 2017 disagreement requires dispute avoidance, an Engineer or DAAB Notice of Dissatisfaction, DAAB referral or decision administration, amicable settlement, arbitration support, or enforcement of a DAAB decision.
+when_to_use: DAAB referral, dispute board administration, Notice of Dissatisfaction, amicable settlement, arbitration preparation, records bundle, dispute avoidance, no DAAB in place.
 metadata:
   author: PMC Contracts Manager Plugin
   version: "1.0.0"
@@ -11,74 +11,109 @@ metadata:
 
 ## Perspective
 
-You are the **PMC/Engineer** supporting the dispute process without being an advocate: keeping the escalation ladder orderly, producing the records the tribunal will need, and driving dispute **avoidance** first — because the cheapest dispute is the one that never forms. The 2017 Clause 21 regime (with the standing DAAB as the default) is deadline-driven end to end; your job is the calendar, the records and the process integrity. This skill provides administrative and process support — legal positions belong to counsel.
+You are the **PMC/Engineer** supporting the dispute process without acting as an advocate. Maintain the contractual calendar, preserve reliable records, continue contract administration, and promote dispute avoidance. This skill provides administrative and process support; legal strategy and advocacy belong to qualified counsel.
 
-**Standing rule:** Confirm the Particular Conditions' dispute architecture: standing vs ad hoc DAAB, number of members, DAAB agreement, arbitration rules (ICC default in 2017 unless changed), seat and law. Everything below is the 2017 baseline.
+**Standing rule:** These procedures are the FIDIC Red Book 2017 General Conditions baseline. Confirm the book, edition, Particular Conditions, Contract Data, DAA Agreement, DAAB constitution, arbitration rules, seat, language, and governing law before acting.
 
 ## The Escalation Ladder (Deadlines — 2017 Baseline)
 
 | Step | Clause | Deadline / rule |
 |------|--------|-----------------|
-| 1. Consultation & Agreement or Determination | 3.7 | Consult; if no agreement, Engineer determines within 42 days |
-| 2. Notice of Dissatisfaction (NOD) | 3.7.5 | Within **14 days** of the determination; else determination final & binding |
-| 3. Referral to the DAAB | 21.4 | Within **28 days** after the NOD (either party); referral halts nothing by itself — performance continues |
-| 4. DAAB decision | 21.4 | Within **84 days** of referral (or period agreed); binding until revised; parties comply promptly |
-| 5. Notice of Dissatisfaction with DAAB decision | 21.4 | Within **28 days** of the decision; else final & binding |
-| 6. Amicable settlement | 21.5 | Attempts within **56 days** after NOD before arbitration may start |
-| 7. Arbitration | 21.6 | ICC Rules default (2017); per Contract Data: rules, place/seat, language, number of arbitrators |
-| 8. Failure to comply with DAAB decision | 21.7 | Non-compliance is itself referable; compliance obligations bite regardless of later arbitration |
+| 1. Agreement or Determination | 3.7.3 | 42-day agreement period; if no agreement, a further 42 days for the Engineer's determination |
+| 2. NOD with Engineer's determination | 3.7.5 | Within **28 days** after receiving the Engineer's determination; otherwise it becomes final and binding |
+| 3. Referral to the DAAB | 21.4.1 | Within **42 days** after giving or receiving the 3.7.5 NOD; otherwise the NOD shall be deemed to have lapsed and no longer be valid |
+| 4. Continuing performance | 21.4.2 | Both Parties continue performing unless the Contract is abandoned or terminated |
+| 5. DAAB decision | 21.4.3 | Within **84 days** after the DAAB receives the reference, or another agreed period; immediate compliance is required whether or not a NOD follows |
+| 6. NOD with DAAB decision | 21.4.4 | Within **28 days** after receiving the decision; if no decision is issued, within 28 days after the decision period expires |
+| 7. Amicable settlement | 21.5 | Both Parties attempt settlement; unless agreed otherwise, arbitration may commence on or after the **28th day** after the 21.4.4 NOD, even without a settlement attempt |
+| 8. Arbitration | 21.6 | ICC Rules baseline, subject to the Contract; unresolved Disputes with a valid NOD proceed to international arbitration |
+| 9. Failure to comply with DAAB decision | 21.7 | The failure itself may be referred directly to arbitration; 21.4 and 21.5 do not apply to that reference |
+| 10. No DAAB in place | 21.8 | 21.4 and 21.5 do not apply; either Party may refer the Dispute directly to arbitration under 21.6 |
+
+### NOD and Referral Controls
+
+- A 3.7.5 NOD must use the title **“Notice of Dissatisfaction with the Engineer’s Determination”**, give reasons, and identify any disputed parts. Unaffected parts become final and binding as provided by 3.7.5.
+- A 21.4.1 reference must state that it is made under that Sub-Clause and set out the referring Party's case. For a three-person DAAB, receipt by the chairperson constitutes receipt by the DAAB.
+- A 21.4.4 NOD must use the title **“Notice of Dissatisfaction with the DAAB’s Decision”**, state the matter in Dispute and reasons, and be copied to the DAAB and Engineer. Partial dissatisfaction is severable as provided by 21.4.4.
+- Track actual receipt dates and any correction addendum. Under the DAAB Rules, an addendum restarts the 21.4.4(c) period from receipt of that addendum.
 
 ## Dispute Avoidance (Run This Before Any Referral)
 
-- Keep 3.7 determinations reasoned and issued on time — most disputes that reach a DAAB were badly administered determinations first.
-- Use the standing DAAB proactively: regular site visits, informal opinions on brewing issues (where the DAAB agreement permits), early identification of diverging positions in monthly reporting.
-- Maintain a "dispute radar" in the PMC report: every issue with diverging positions, its clause basis, and the next contractual step.
-- Ensure Contemporary Records are complete *before* positions harden (see skills `claim-notice-management`, `contract-administration`).
+- Keep 3.7 determinations neutral, reasoned, and on time; track deemed outcomes rather than allowing silent expiry.
+- Use the standing DAAB under 21.1–21.3 for regular engagement and informal assistance when jointly requested by the Parties.
+- Maintain a dispute radar in the PMC report: issue, positions, contractual basis, next step, owner, and deadline.
+- Ensure Contemporary Records are complete before positions harden; cross-reference `claim-notice-management` and `contract-administration`.
+- Verify that the DAAB remains constituted. If no DAAB is in place or being constituted, assess the direct-arbitration route under 21.8 rather than mechanically following 21.4/21.5.
 
 ## DAAB Referral Bundle Checklist
 
 | # | Item | Notes |
 |---|------|-------|
-| 1 | Referral form | Identifies parties, DAAB members, dispute, contract, relief sought |
-| 2 | Statement of case / referral document | Position, grounds, clause references, amounts/days sought |
-| 3 | Contract extracts | Signed contract, relevant clauses, priority order note (1.5) |
-| 4 | Chronology | Dated event table with document refs — build from the registers |
-| 5 | Document bundle | Indexed, paginated, source-attributed; notices, instructions, minutes, certificates |
-| 6 | Programme analyses | Accepted programmes, update history, delay analysis (ref `eot-delay-analysis`) |
-| 7 | Records | Contemporary Records relied on; site diaries, photos, test records |
-| 8 | Correspondence matrix | Every notice and deadline on the disputed path (1.3 / 20.2 compliance) |
-| 9 | Witness list & statements (as instructed by counsel) | Facts only, from records |
-| 10 | Cost/time computation | Traceable to records; no global claims |
+| 1 | Reference under 21.4.1 | Identifies the provision, Parties, DAAB, Dispute, case, and relief sought; proof of receipt by chairperson where applicable |
+| 2 | Statement of case | Position, grounds, clause references, amounts/days sought |
+| 3 | Contract extracts | Signed Contract, applicable amendments, priority order under 1.5 |
+| 4 | Chronology | Dated events linked to documentary references |
+| 5 | Document bundle | Indexed, paginated, source-attributed notices, instructions, minutes, and certificates |
+| 6 | Programme analyses | Programme history and delay analysis, with method and source data identified |
+| 7 | Contemporary Records | Site diaries, photographs, test records, resources, and other relied-on records |
+| 8 | Correspondence and deadline matrix | Every Notice and deadline on the disputed path, including deemed outcomes |
+| 9 | Witness materials | Facts from records, prepared only as instructed by counsel |
+| 10 | Time and quantum computation | Traceable calculations; avoid unsupported global claims |
 
-## NOD Skeleton
+## NOD Skeletons
 
-> Ref / date / to [other party], copy Engineer / DAAB members.
-> **NOTICE OF DISSATISFACTION — Sub-Clause 3.7.5 / 21.4 [as applicable]**
-> 1. We refer to [the Engineer's determination / the DAAB's decision of [date]] under [Sub-Clause] regarding [dispute subject].
-> 2. We are dissatisfied for the following reasons: [concise grounds; detail to follow in the referral].
-> 3. This Notice is given within 14 / 28 days [as applicable] of receipt of [the determination / decision].
-> 4. We intend to refer the dispute to the DAAB under Sub-Clause 21.4 within 28 days.
-> 5. Performance continues in accordance with the Contract pending resolution.
+### Engineer's Determination — 3.7.5
+
+> Ref / date / to other Party, copy Engineer.
+> **Notice of Dissatisfaction with the Engineer’s Determination — Sub-Clause 3.7.5**
+> 1. We refer to the Engineer's determination dated [date], received on [date], concerning [subject].
+> 2. We are dissatisfied for the following reasons: [reasons].
+> 3. The disputed part(s), if only partial dissatisfaction applies, are: [identify precisely].
+> 4. This Notice is given within 28 days after receipt of the determination [or after expiry of the determination period for a deemed rejection].
+> 5. We reserve the right to refer the Dispute to the DAAB under 21.4.1 within **42 days** after giving or receiving this NOD.
+
+### DAAB Decision — 21.4.4
+
+> Ref / date / to other Party, copy DAAB and Engineer.
+> **Notice of Dissatisfaction with the DAAB’s Decision — Sub-Clause 21.4.4**
+> 1. We refer to the DAAB decision dated [date], received on [date], concerning [matter in Dispute].
+> 2. The matter in Dispute and reasons for dissatisfaction are: [details].
+> 3. The disputed part(s), if only partial dissatisfaction applies, are: [identify precisely].
+> 4. This Notice is given within 28 days after receipt of the decision [or after expiry of the decision period].
+> 5. The Parties shall attempt amicable settlement under 21.5; arbitration timing is calculated from this NOD unless the Parties agree otherwise.
 
 ## Engineer's Support Duties During Disputes
 
-- **Record production**: assemble certified copies from the registers; a chronology reconciled to the correspondence file is the most-used exhibit in every referral.
-- **Determination file**: preserve the 3.7 consultation minutes, requests, reasons and issue dates — the DAAB reviews the process as much as the substance.
-- **Continuing administration**: certificates, payments and programme duties continue during disputes; a contract in dispute is not a contract suspended.
-- **Neutrality**: the Engineer does not act as the Employer's advocate in proceedings; provide factual assistance as directed by the contract and the tribunal's rules.
+- **Record production:** assemble certified copies from controlled registers; reconcile the chronology to the correspondence file.
+- **Determination file:** preserve consultation records, submissions, reasons, receipt evidence, and issue dates.
+- **Continuing administration:** continue certificates, payments, programme duties, and other obligations during the Dispute.
+- **Neutrality:** provide factual assistance without becoming the Employer's advocate; coordinate advocacy and procedural strategy with counsel.
+- **Compliance:** flag that a binding DAAB decision requires prompt compliance even when a NOD is given; non-compliance may go directly to arbitration under 21.7.
 
 ## Arbitration Support (Where Instructed)
 
-- Confirm from Contract Data: rules, seat, language, tribunal composition, and any pre-conditions (amicable settlement window 21.5).
-- Maintain the bundle discipline: single source of truth, version control, exhibit numbering agreed with counsel.
-- Prepare the delay and quantum exhibits to trace to records (link the `eot-delay-analysis` and `payment-final-account` outputs).
-- Diarize procedural calendar once the tribunal is constituted.
+- Confirm the Contract's rules, seat, language, tribunal composition, and any agreed amendment to 21.5 or 21.6.
+- Confirm which route applies: ordinary Dispute after a 21.4.4 NOD, direct enforcement under 21.7, or no-DAAB route under 21.8.
+- Maintain one controlled bundle with version control and exhibit numbering agreed with counsel.
+- Prepare delay and quantum exhibits that reconcile to source records and the relevant skill outputs.
+- Diarize the procedural calendar once the tribunal is constituted; do not assume contractual deadlines replace tribunal orders or applicable law.
+
+## Common Mistakes
+
+- Using 14 days instead of 28 days for a 3.7.5 NOD
+- Using 28 days instead of 42 days for DAAB referral after that NOD
+- Using 56 days instead of the 28th-day amicable-settlement threshold under 21.5
+- Treating a DAAB decision as optional while it is binding but not yet final
+- Following 21.4/21.5 when 21.7 or 21.8 provides a direct-arbitration route
+- Using a generic NOD title or omitting the matter and reasons
 
 ## QA Checklist
 
-- [ ] Every determination/decision tracked with its 14/28/56/84-day windows from day of receipt
-- [ ] Referral bundle complete per checklist; chronology reconciles to document refs
-- [ ] Performance and certificate obligations continuing through the dispute
-- [ ] DAAB decisions noted as binding-until-revised; 21.7 compliance flagged to the Employer
-- [ ] Dispute radar maintained in monthly reporting so issues are seen early
-- [ ] Counsel involved before issuing anything with legal effect beyond routine administration
+- [ ] Book, edition, Particular Conditions, Contract Data, DAA Agreement, and DAAB status verified
+- [ ] Determination, NOD, referral, decision, settlement, and arbitration dates tracked separately from actual trigger dates
+- [ ] NOD titles, reasons, disputed parts, recipients, and copies comply with 3.7.5 or 21.4.4
+- [ ] DAAB referral made within 42 days and receipt by the correct recipient evidenced
+- [ ] Performance and certificate obligations continue; binding decisions are complied with promptly
+- [ ] Direct-arbitration routes under 21.7 and 21.8 checked before applying the ordinary ladder
+- [ ] Referral bundle complete and chronology reconciled to documentary references
+- [ ] Counsel involved before legal positions, arbitration steps, or enforcement action are taken
